@@ -58,6 +58,7 @@ public class S_PlayerMovement2 : MonoBehaviour
     private float reScaleTime;
 
     private S_StickerBook stickerBook;
+    private S_StickerPopUp stickerPopUp;
 
 
     void Start()
@@ -66,6 +67,7 @@ public class S_PlayerMovement2 : MonoBehaviour
         controller = GetComponent<CharacterController>();
 
         stickerBook = FindObjectOfType<S_StickerBook>();
+        stickerPopUp = FindObjectOfType<S_StickerPopUp>();
     }
 
     void Update()
@@ -109,15 +111,15 @@ public class S_PlayerMovement2 : MonoBehaviour
         {
             if (y > 0)
             {
-                actualScaleSpeed = scaleSpeed/3;
+                actualScaleSpeed = scaleSpeed;
             }
             else
             {
-                actualScaleSpeed = scaleSpeed;
+                actualScaleSpeed = scaleSpeed/3;
             }
 
             velocity.y = y * floatingSpeed;
-            transform.localScale = transform.localScale + Vector3.one * y * -actualScaleSpeed;
+            transform.localScale = transform.localScale + Vector3.one * y * actualScaleSpeed;
             currentScale = transform.localScale;
             reScaleTime = 0f;
         }
@@ -154,11 +156,13 @@ public class S_PlayerMovement2 : MonoBehaviour
         if (transform.localScale.x < minScalePop)
         {
             stickerBook.UnlockSticker(2);
+            StartCoroutine(stickerPopUp.PopUpSticker(stickerBook.stickerList[2].unlockImage));
             RespawnAfterPop();
         }
         else if (transform.localScale.x > maxScalePop)
         {
             stickerBook.UnlockSticker(1);
+            StartCoroutine(stickerPopUp.PopUpSticker(stickerBook.stickerList[1].unlockImage));
             RespawnAfterPop();
         }
     }
