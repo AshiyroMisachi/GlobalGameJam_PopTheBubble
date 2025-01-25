@@ -19,6 +19,7 @@ public class S_StickerBook : MonoBehaviour
 
 
     public S_Sticker[] stickerList;
+    [SerializeField]
     private bool[] stickersUnlock;
 
     public Animator blackImage;

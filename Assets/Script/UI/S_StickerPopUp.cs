@@ -46,6 +46,7 @@ public class S_StickerPopUp : MonoBehaviour
     public IEnumerator PopUpSticker(Sprite stickerIcone)
     {
         unlockedIcone.gameObject.SetActive(true);
+        unlockedIcone.sprite = stickerIcone;
         yield return new WaitForSeconds(1);
         isAnimating = true;
     }

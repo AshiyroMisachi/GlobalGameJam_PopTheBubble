@@ -59,6 +59,7 @@ public class S_PlayerMovement2 : MonoBehaviour
 
     private S_StickerBook stickerBook;
     private S_StickerPopUp stickerPopUp;
+    private S_FallingCubeManager fallingCubeManager;
 
 
     void Start()
@@ -68,6 +69,7 @@ public class S_PlayerMovement2 : MonoBehaviour
 
         stickerBook = FindObjectOfType<S_StickerBook>();
         stickerPopUp = FindObjectOfType<S_StickerPopUp>();
+        fallingCubeManager = FindObjectOfType<S_FallingCubeManager>();
     }
 
     void Update()
@@ -155,19 +157,19 @@ public class S_PlayerMovement2 : MonoBehaviour
     {
         if (transform.localScale.x < minScalePop)
         {
-            if (!stickerBook.CheckStickerState(2))
+            if (!stickerBook.CheckStickerState(1))
             {
-                stickerBook.UnlockSticker(2);
-                StartCoroutine(stickerPopUp.PopUpSticker(stickerBook.stickerList[2].unlockImage));
+                stickerBook.UnlockSticker(1);
+                StartCoroutine(stickerPopUp.PopUpSticker(stickerBook.stickerList[1].unlockImage));
             }
             RespawnAfterPop();
         }
         else if (transform.localScale.x > maxScalePop)
         {
-            if (!stickerBook.CheckStickerState(1))
+            if (!stickerBook.CheckStickerState(0))
             {
-                stickerBook.UnlockSticker(1);
-                StartCoroutine(stickerPopUp.PopUpSticker(stickerBook.stickerList[1].unlockImage));
+                stickerBook.UnlockSticker(0);
+                StartCoroutine(stickerPopUp.PopUpSticker(stickerBook.stickerList[0].unlockImage));
             }
             RespawnAfterPop();
         }
@@ -179,12 +181,19 @@ public class S_PlayerMovement2 : MonoBehaviour
     {
         //Animation Pop
 
+
+
         //Fin animation Pop
         playerpoped = true;
         transform.SetPositionAndRotation(playerStart.position, playerStart.rotation);
         transform.localScale = Vector3.one;
         currentScale = Vector3.one;
         StartCoroutine(RespawnPlayer());
+
+        if (!fallingCubeManager.playerGotKilled)
+        {
+            fallingCubeManager.ResetCubesPositions();
+        }
     }
 
     public IEnumerator RespawnPlayer()
@@ -197,4 +206,17 @@ public class S_PlayerMovement2 : MonoBehaviour
         playerpoped = false;
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.GetComponent<S_Cube>())
+        {
+            if (collision.gameObject.GetComponent<Rigidbody>().velocity.y < 0 && collision.transform.position.y > transform.position.y)
+            {
+                StartCoroutine(stickerPopUp.PopUpSticker(stickerBook.stickerList[4].unlockImage));
+                stickerBook.UnlockSticker(4);
+                fallingCubeManager.playerGotKilled = true;
+                RespawnAfterPop();
+            }
+        }
+    }
 }

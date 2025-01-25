@@ -19,7 +19,6 @@ public class S_MainScreenManager : MonoBehaviour
         m_AudioSource = GetComponent<AudioSource>();
         dataManager = FindObjectOfType<S_DataManager>();
         Cursor.lockState = CursorLockMode.None;
-        Debug.Log("Test");
     }
 
     public void StartLevel()

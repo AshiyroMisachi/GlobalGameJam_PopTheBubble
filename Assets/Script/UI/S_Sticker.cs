@@ -23,9 +23,8 @@ public class S_Sticker : MonoBehaviour
 
     public void Unlock()
     {
+        sticker.color = Color.white;
         sticker.sprite = unlockImage;
         gameText.text = stickerName;
-
-        //POP UP Event ?
     }
 }
