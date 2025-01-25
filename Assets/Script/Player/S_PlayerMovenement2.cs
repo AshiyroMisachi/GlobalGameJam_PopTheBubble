@@ -155,18 +155,23 @@ public class S_PlayerMovement2 : MonoBehaviour
     {
         if (transform.localScale.x < minScalePop)
         {
-            stickerBook.UnlockSticker(2);
-            StartCoroutine(stickerPopUp.PopUpSticker(stickerBook.stickerList[2].unlockImage));
+            if (!stickerBook.CheckStickerState(2))
+            {
+                stickerBook.UnlockSticker(2);
+                StartCoroutine(stickerPopUp.PopUpSticker(stickerBook.stickerList[2].unlockImage));
+            }
             RespawnAfterPop();
         }
         else if (transform.localScale.x > maxScalePop)
         {
-            stickerBook.UnlockSticker(1);
-            StartCoroutine(stickerPopUp.PopUpSticker(stickerBook.stickerList[1].unlockImage));
+            if (!stickerBook.CheckStickerState(1))
+            {
+                stickerBook.UnlockSticker(1);
+                StartCoroutine(stickerPopUp.PopUpSticker(stickerBook.stickerList[1].unlockImage));
+            }
             RespawnAfterPop();
         }
     }
-
 
 
     //Respawn
@@ -186,6 +191,8 @@ public class S_PlayerMovement2 : MonoBehaviour
     {
         //Début clignotement Bulle
         yield return new WaitForSeconds(1f);
+        stickerBook.CheckWinCondition();
+
         //Stop clignotement bulle
         playerpoped = false;
     }

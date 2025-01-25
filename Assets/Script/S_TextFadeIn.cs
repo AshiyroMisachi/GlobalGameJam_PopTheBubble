@@ -32,6 +32,6 @@ public class S_TextFadeIn : MonoBehaviour
     public IEnumerator BackToMainScreen()
     {
         yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("MainScreen");
     }
 }
