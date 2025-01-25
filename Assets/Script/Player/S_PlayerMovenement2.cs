@@ -49,10 +49,23 @@ public class S_PlayerMovement2 : MonoBehaviour
     public bool playerpoped;
 
 
+    public float scaleSpeed;
+    private float actualScaleSpeed;
+    public float minScalePop;
+    public float maxScalePop;
+
+    private Vector3 currentScale = Vector3.one;
+    private float reScaleTime;
+
+    private S_StickerBook stickerBook;
+
+
     void Start()
     {
         //Get Reference from Component
         controller = GetComponent<CharacterController>();
+
+        stickerBook = FindObjectOfType<S_StickerBook>();
     }
 
     void Update()
@@ -68,6 +81,8 @@ public class S_PlayerMovement2 : MonoBehaviour
         Movement();
         //Apply the gravity to the player
         PlayerGravity();
+
+        ScaleDeath();
     }
 
     private void Movement()
@@ -84,20 +99,36 @@ public class S_PlayerMovement2 : MonoBehaviour
         //Move the Player    Multiplied by the speed    And deltaTime to work with all frameRate
         controller.Move(move * speed * Time.deltaTime);
 
-
-        float y = Input.GetAxis("Jump");
-        if (y != 0)
-        {
-            velocity.y = y * floatingSpeed;
-        }
     }
 
     private void PlayerGravity()
     {
-        //Apply the gravity to the player  multiplied by deltaTime to be frame independant 
         float y = Input.GetAxis("Jump");
-        if (y == 0)
-            velocity.y += gravity * Time.deltaTime;
+
+        if (y != 0)
+        {
+            if (y > 0)
+            {
+                actualScaleSpeed = scaleSpeed/3;
+            }
+            else
+            {
+                actualScaleSpeed = scaleSpeed;
+            }
+
+            velocity.y = y * floatingSpeed;
+            transform.localScale = transform.localScale + Vector3.one * y * -actualScaleSpeed;
+            currentScale = transform.localScale;
+            reScaleTime = 0f;
+        }
+        else
+        {
+            //Apply the gravity to the player  multiplied by deltaTime to be frame independant 
+            velocity.y = gravity;
+
+            reScaleTime += 0.0005f;
+            transform.localScale = Vector3.Lerp(currentScale, Vector3.one, reScaleTime);
+        }
 
 
         //Move the player with the gravity velocity  and multiplied again with deltaTime because
@@ -116,6 +147,25 @@ public class S_PlayerMovement2 : MonoBehaviour
         }
     }
 
+
+    //Self Death Condition
+    private void ScaleDeath()
+    {
+        if (transform.localScale.x < minScalePop)
+        {
+            stickerBook.UnlockSticker(2);
+            RespawnAfterPop();
+        }
+        else if (transform.localScale.x > maxScalePop)
+        {
+            stickerBook.UnlockSticker(1);
+            RespawnAfterPop();
+        }
+    }
+
+
+
+    //Respawn
     public void RespawnAfterPop()
     {
         //Animation Pop
@@ -123,6 +173,9 @@ public class S_PlayerMovement2 : MonoBehaviour
         //Fin animation Pop
         playerpoped = true;
         transform.SetPositionAndRotation(playerStart.position, playerStart.rotation);
+        transform.localScale = Vector3.one;
+        currentScale = Vector3.one;
+        StartCoroutine(RespawnPlayer());
     }
 
     public IEnumerator RespawnPlayer()

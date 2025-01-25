@@ -16,7 +16,15 @@ public class S_StickerBook : MonoBehaviour
 
 
     public S_Sticker[] stickerList;
-    public bool[] stickersUnlock;
+    private bool[] stickersUnlock;
+
+
+
+    private void Start()
+    {
+        stickersUnlock = new bool[stickerList.Length];   
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -29,6 +37,13 @@ public class S_StickerBook : MonoBehaviour
             SetupStickerBook();
         }
     }
+
+
+    public void UnlockSticker(int stickerNumber)
+    {
+        stickersUnlock[stickerNumber] = true;
+    }
+
 
     private void SetupStickerBook()
     {

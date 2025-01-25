@@ -17,7 +17,7 @@ public class S_DeathInteraction : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        stickerbook.stickersUnlock[relatedSticker] = true;
+        stickerbook.UnlockSticker(0);
         player.RespawnAfterPop();
     }
 }
