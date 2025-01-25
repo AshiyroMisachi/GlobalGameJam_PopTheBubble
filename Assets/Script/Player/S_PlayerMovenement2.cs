@@ -62,6 +62,8 @@ public class S_PlayerMovement2 : MonoBehaviour
     private S_FallingCubeManager fallingCubeManager;
 
 
+    private AudioSource popSound;
+
     void Start()
     {
         //Get Reference from Component
@@ -70,6 +72,7 @@ public class S_PlayerMovement2 : MonoBehaviour
         stickerBook = FindObjectOfType<S_StickerBook>();
         stickerPopUp = FindObjectOfType<S_StickerPopUp>();
         fallingCubeManager = FindObjectOfType<S_FallingCubeManager>();
+        popSound = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -185,6 +188,7 @@ public class S_PlayerMovement2 : MonoBehaviour
 
         //Fin animation Pop
         playerpoped = true;
+        popSound.Play();
         transform.SetPositionAndRotation(playerStart.position, playerStart.rotation);
         transform.localScale = Vector3.one;
         currentScale = Vector3.one;
