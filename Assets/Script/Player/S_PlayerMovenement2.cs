@@ -40,6 +40,7 @@ public class S_PlayerMovement2 : MonoBehaviour
 
 
 
+    public MeshRenderer playerObj;
 
     public Transform orientation;
     public float floatingSpeed;
@@ -63,6 +64,7 @@ public class S_PlayerMovement2 : MonoBehaviour
 
 
     private AudioSource popSound;
+    public GameObject popVFX;
 
     void Start()
     {
@@ -182,16 +184,8 @@ public class S_PlayerMovement2 : MonoBehaviour
     //Respawn
     public void RespawnAfterPop()
     {
-        //Animation Pop
-
-
-
-        //Fin animation Pop
         playerpoped = true;
         popSound.Play();
-        transform.SetPositionAndRotation(playerStart.position, playerStart.rotation);
-        transform.localScale = Vector3.one;
-        currentScale = Vector3.one;
         StartCoroutine(RespawnPlayer());
 
         if (!fallingCubeManager.playerGotKilled)
@@ -202,11 +196,16 @@ public class S_PlayerMovement2 : MonoBehaviour
 
     public IEnumerator RespawnPlayer()
     {
-        //Début clignotement Bulle
+        playerObj.enabled = false;
+        GameObject activePopVFX = Instantiate(popVFX, transform.position, Quaternion.identity);
         yield return new WaitForSeconds(1f);
+        Destroy(activePopVFX);
+        playerObj.enabled = true;
+        transform.SetPositionAndRotation(playerStart.position, playerStart.rotation);
+        transform.localScale = Vector3.one;
+        currentScale = Vector3.one;
         stickerBook.CheckWinCondition();
-
-        //Stop clignotement bulle
+        yield return new WaitForSeconds(0.2f);
         playerpoped = false;
     }
 
