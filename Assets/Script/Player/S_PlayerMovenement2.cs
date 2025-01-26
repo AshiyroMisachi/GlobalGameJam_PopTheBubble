@@ -1,5 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -75,6 +78,8 @@ public class S_PlayerMovement2 : MonoBehaviour
         stickerPopUp = FindObjectOfType<S_StickerPopUp>();
         fallingCubeManager = FindObjectOfType<S_FallingCubeManager>();
         popSound = GetComponent<AudioSource>();
+
+
     }
 
     void Update()
@@ -126,7 +131,9 @@ public class S_PlayerMovement2 : MonoBehaviour
             }
 
             velocity.y = y * floatingSpeed;
+
             transform.localScale = transform.localScale + Vector3.one * y * actualScaleSpeed;
+
             currentScale = transform.localScale;
             reScaleTime = 0f;
         }
@@ -135,7 +142,7 @@ public class S_PlayerMovement2 : MonoBehaviour
             //Apply the gravity to the player  multiplied by deltaTime to be frame independant 
             velocity.y = gravity;
 
-            reScaleTime += 0.0005f;
+            reScaleTime += 0.008f;
             transform.localScale = Vector3.Lerp(currentScale, Vector3.one, reScaleTime);
         }
 
@@ -187,7 +194,6 @@ public class S_PlayerMovement2 : MonoBehaviour
         playerpoped = true;
         popSound.Play();
         StartCoroutine(RespawnPlayer());
-
         if (!fallingCubeManager.playerGotKilled)
         {
             fallingCubeManager.ResetCubesPositions();

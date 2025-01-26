@@ -16,6 +16,8 @@ public class S_LampDeath : MonoBehaviour
     public Material activeMaterial;
     public Collider triggerCollider;
 
+    private bool canPlayerDie;
+
     [SerializeField]
     private float playerHeat;
     private void Start()
@@ -30,8 +32,9 @@ public class S_LampDeath : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         playerHeat += 1f;
-        if (playerHeat >= 100)
+        if (playerHeat >= 100 && canPlayerDie)
         {
+            canPlayerDie = false;
             stickerbook.UnlockSticker(relatedSticker);
             StartCoroutine(stickerPopUp.PopUpSticker(stickerbook.stickerList[relatedSticker].unlockImage));
             player.RespawnAfterPop();
@@ -39,9 +42,15 @@ public class S_LampDeath : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        canPlayerDie = true;
+    }
+
     private void OnTriggerExit(Collider other)
     {
         playerHeat = 0f;
+        canPlayerDie = false;
     }
 
 

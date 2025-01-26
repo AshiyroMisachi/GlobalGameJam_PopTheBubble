@@ -27,7 +27,7 @@ public class S_StickerPopUp : MonoBehaviour
     {
         if (isAnimating && lerpFactor != 1f)
         {
-            lerpFactor += 0.0025f;
+            lerpFactor += 0.02f;
             unlockedIcone.rectTransform.localScale = Vector3.Lerp(Vector3.one, Vector3.zero, lerpFactor);
             unlockedIcone.rectTransform.localPosition = Vector3.Lerp(unlockedIconeInitialPosition, stickerBookIcone.rectTransform.localPosition, lerpFactor);
 
