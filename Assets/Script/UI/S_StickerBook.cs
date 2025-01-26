@@ -28,6 +28,7 @@ public class S_StickerBook : MonoBehaviour
     {
         stickersUnlock = new bool[stickerList.Length];   
         levelManager = FindObjectOfType<S_LevelManager>();
+        stickerBook.SetActive(false);
     }
 
 

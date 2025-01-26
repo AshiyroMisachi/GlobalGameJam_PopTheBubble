@@ -16,6 +16,7 @@ public class S_MainScreenManager : MonoBehaviour
 
     private void Start()
     {
+        stickerbook.SetActive(false);
         m_AudioSource = GetComponent<AudioSource>();
         dataManager = FindObjectOfType<S_DataManager>();
         Cursor.lockState = CursorLockMode.None;
