@@ -488,11 +488,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Door_Yann_001
       objectReference: {fileID: 0}
+    - target: {fileID: 7750397243111347764, guid: 3c7c26c1e8d822f479d4a426c503a729, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7750397243111347764, guid: 3c7c26c1e8d822f479d4a426c503a729, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 61405229}
   m_SourcePrefab: {fileID: 100100000, guid: 3c7c26c1e8d822f479d4a426c503a729, type: 3}
+--- !u!1 &61405228 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7750397243111347764, guid: 3c7c26c1e8d822f479d4a426c503a729, type: 3}
+  m_PrefabInstance: {fileID: 61405227}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &61405229
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61405228}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6329158148709259305, guid: 3c7c26c1e8d822f479d4a426c503a729, type: 3}
 --- !u!1001 &67800728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -548,6 +582,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
       propertyPath: m_Name
       value: SM_Book02_Yann_001 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1222,6 +1260,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Socket_Yann_001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a331f6ae51569504ea958d83e40456c3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1286,6 +1328,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 38f356828b7c33c4e8e2e24d7a986477, type: 3}
       propertyPath: m_Name
       value: SM_Cube_Yann_001 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38f356828b7c33c4e8e2e24d7a986477, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1376,6 +1422,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e8760a2f2f62fa49bf86f94f8e1124f, type: 3}
       propertyPath: m_Name
       value: SM_Pillow02_Yann_001 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e8760a2f2f62fa49bf86f94f8e1124f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1562,6 +1612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book01_Yann_001 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1656,6 +1710,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 706b056f12ba5b14eaf156d70f56b0e1, type: 3}
       propertyPath: m_Name
       value: SM_WagonVide_Lisa_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 706b056f12ba5b14eaf156d70f56b0e1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1787,6 +1845,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_ToyChest_Yann_001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dae0cb91311b1b045839d4b4ae1d778a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1877,6 +1939,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
       propertyPath: m_Name
       value: SM_Book02_Yann_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2184,6 +2250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tapis_Lisa_002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11e347bed80fd7140ac73fbce1216032, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2279,6 +2349,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
       propertyPath: m_Name
       value: SM_Book01_Yann_001 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2379,6 +2453,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
       propertyPath: m_Name
       value: SM_Book02_Yann_001 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3065,6 +3143,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_PensPot_Yann_001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 41478c540dc2d734dbf65db7072ddf22, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3168,9 +3250,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6a518f3bb2dc85a438f842ac7c36dbfe, type: 2}
+    - target: {fileID: -4410021065450303330, guid: 97826776781b4a844be664f7a154b653, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 97826776781b4a844be664f7a154b653, type: 3}
       propertyPath: m_Name
       value: SM_Reveil_Lisa_003
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97826776781b4a844be664f7a154b653, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6376130480381914529, guid: 97826776781b4a844be664f7a154b653, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3500,6 +3590,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book02_Yann_001 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3627,6 +3721,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book01_Yann_001 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3680,7 +3778,7 @@ GameObject:
   - component: {fileID: 500686699}
   - component: {fileID: 500686698}
   - component: {fileID: 500686697}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Touche1 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4080,6 +4178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book03_Yann_001 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ce967eeaa2286640a87dfc0108f8206, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4304,6 +4406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book03_Yann_001 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ce967eeaa2286640a87dfc0108f8206, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4394,6 +4500,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 191a0b04e108cfd4194137c485438675, type: 3}
       propertyPath: m_Name
       value: SM_Ball_Yann_001 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 191a0b04e108cfd4194137c485438675, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4490,6 +4600,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
       propertyPath: m_Name
       value: SM_Book02_Yann_001 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4601,6 +4715,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 96cd4cfb82a56da4c919d858f27ac900, type: 3}
       propertyPath: m_Name
       value: SM_PenColor_Yann_001 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 96cd4cfb82a56da4c919d858f27ac900, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5138,6 +5256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_TableChevet_Lisa_002
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bcaa43e0fea849e43bba614ed0320fd7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5198,6 +5320,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 96cd4cfb82a56da4c919d858f27ac900, type: 3}
       propertyPath: m_Name
       value: SM_PenColor_Yann_001 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 96cd4cfb82a56da4c919d858f27ac900, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5326,6 +5452,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
       propertyPath: m_Name
       value: SM_Book01_Yann_001 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5572,7 +5702,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 4208596922618815636, guid: 3512763459b844e40836caca836ae834, type: 3}
+  m_Mesh: {fileID: 4208596922618815636, guid: b3af0961d22cb2a45831d81f5961f5d7, type: 3}
 --- !u!1001 &676718265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5628,6 +5758,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1ce967eeaa2286640a87dfc0108f8206, type: 3}
       propertyPath: m_Name
       value: SM_Book03_Yann_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ce967eeaa2286640a87dfc0108f8206, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5869,6 +6003,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Cube_Yann_001 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38f356828b7c33c4e8e2e24d7a986477, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5958,6 +6096,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e8760a2f2f62fa49bf86f94f8e1124f, type: 3}
       propertyPath: m_Name
       value: SM_Pillow02_Yann_001 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e8760a2f2f62fa49bf86f94f8e1124f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6082,6 +6224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Pillow02_Yann_001 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e8760a2f2f62fa49bf86f94f8e1124f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6173,6 +6319,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 38f356828b7c33c4e8e2e24d7a986477, type: 3}
       propertyPath: m_Name
       value: SM_Cube_Yann_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38f356828b7c33c4e8e2e24d7a986477, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6377,6 +6527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Pillow02_Yann_001 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e8760a2f2f62fa49bf86f94f8e1124f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6560,6 +6714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Pillow03_Yann_001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e0ed74aed5c1299488b526fd36348b80, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6737,6 +6895,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book01_Yann_001 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6832,6 +6994,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Pillow01_Yann_001 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 414d8dabd459ad44397d0cbaae5bcbe7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6886,7 +7052,7 @@ GameObject:
   - component: {fileID: 831003843}
   - component: {fileID: 831003842}
   - component: {fileID: 831003841}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Touche1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7558,9 +7724,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -262038022085934026, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
       propertyPath: m_Name
       value: SM_BoutonLampe_Lisa_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589863047238419820, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7683,6 +7861,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book02_Yann_001 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7777,6 +7959,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1ce967eeaa2286640a87dfc0108f8206, type: 3}
       propertyPath: m_Name
       value: SM_Book03_Yann_001 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ce967eeaa2286640a87dfc0108f8206, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7873,6 +8059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book01_Yann_001 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7967,6 +8157,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
       propertyPath: m_Name
       value: SM_Book01_Yann_001 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8317,6 +8511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book02_Yann_001 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8411,6 +8609,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 06e6039d2bb64eb4893bc7f974d2b1bd, type: 3}
       propertyPath: m_Name
       value: SM_Rails_Lisa_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 06e6039d2bb64eb4893bc7f974d2b1bd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8507,6 +8709,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
       propertyPath: m_Name
       value: SM_Book02_Yann_001 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9132,6 +9338,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_WagonCylindresPiles_Lisa_001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 90bc281ea4886d449918726e63a88ad2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9340,7 +9550,7 @@ GameObject:
   - component: {fileID: 1002334151}
   - component: {fileID: 1002334150}
   - component: {fileID: 1002334149}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Touche1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9844,7 +10054,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1013342014}
   - component: {fileID: 1013342013}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CubeManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10004,11 +10214,19 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ab1a6770f67203948ba414e27d35fb4c, type: 2}
     - target: {fileID: -1790981517914978558, guid: bb4bc0163a3bd3949a35247f59221722, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bb4bc0163a3bd3949a35247f59221722, type: 3}
       propertyPath: m_Name
       value: SM_LampeChevet_Lisa_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb4bc0163a3bd3949a35247f59221722, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256952612841960283, guid: bb4bc0163a3bd3949a35247f59221722, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8803215414277367534, guid: bb4bc0163a3bd3949a35247f59221722, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -10138,7 +10356,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 4208596922618815636, guid: 3512763459b844e40836caca836ae834, type: 3}
+  m_Mesh: {fileID: 4208596922618815636, guid: b3af0961d22cb2a45831d81f5961f5d7, type: 3}
 --- !u!1001 &1058859270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10190,6 +10408,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 96cd4cfb82a56da4c919d858f27ac900, type: 3}
       propertyPath: m_Name
       value: SM_PenColor_Yann_001 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 96cd4cfb82a56da4c919d858f27ac900, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10291,6 +10513,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 96cd4cfb82a56da4c919d858f27ac900, type: 3}
       propertyPath: m_Name
       value: SM_PenColor_Yann_001 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 96cd4cfb82a56da4c919d858f27ac900, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10506,6 +10732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book03_Yann_001 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ce967eeaa2286640a87dfc0108f8206, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10600,6 +10830,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1ce967eeaa2286640a87dfc0108f8206, type: 3}
       propertyPath: m_Name
       value: SM_Book03_Yann_001 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ce967eeaa2286640a87dfc0108f8206, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10700,6 +10934,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
       propertyPath: m_Name
       value: SM_Book01_Yann_001 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10938,6 +11176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Pencil_Yann_001 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8a691b565486dab4fb2d22d4964b1282, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11091,7 +11333,7 @@ GameObject:
   - component: {fileID: 1157765174}
   - component: {fileID: 1157765173}
   - component: {fileID: 1157765172}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Touche1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11630,6 +11872,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book02_Yann_001 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11721,6 +11967,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Pillow01_Yann_001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 414d8dabd459ad44397d0cbaae5bcbe7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11775,7 +12025,7 @@ GameObject:
   - component: {fileID: 1243802099}
   - component: {fileID: 1243802098}
   - component: {fileID: 1243802097}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Touche1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12475,6 +12725,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_TeddyBear_Yann_001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5dd0ef475ded4a742b07a62fde326d98, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -12611,7 +12865,7 @@ GameObject:
   - component: {fileID: 1302848412}
   - component: {fileID: 1302848411}
   - component: {fileID: 1302848410}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Touche1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13097,6 +13351,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Pillow01_Yann_001 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 414d8dabd459ad44397d0cbaae5bcbe7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13240,7 +13498,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 4208596922618815636, guid: 3512763459b844e40836caca836ae834, type: 3}
+  m_Mesh: {fileID: 4208596922618815636, guid: b3af0961d22cb2a45831d81f5961f5d7, type: 3}
 --- !u!1001 &1366200768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13472,6 +13730,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
       propertyPath: m_Name
       value: SM_Book01_Yann_001 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13710,6 +13972,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Xylophone_Yann_001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 103e806e2833f534684cbac49b1d9f87, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -13797,6 +14063,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
       propertyPath: m_Name
       value: SM_Book02_Yann_001 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13892,6 +14162,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
       propertyPath: m_Name
       value: SM_Book02_Yann_001 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14547,6 +14821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Pillow02_Yann_001 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e8760a2f2f62fa49bf86f94f8e1124f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14868,6 +15146,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Ball_Yann_001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 191a0b04e108cfd4194137c485438675, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15097,6 +15379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Pencil_Yann_001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8a691b565486dab4fb2d22d4964b1282, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15187,6 +15473,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
       propertyPath: m_Name
       value: SM_Book02_Yann_001 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15282,6 +15572,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
       propertyPath: m_Name
       value: SM_Book01_Yann_001 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15436,7 +15730,7 @@ GameObject:
   - component: {fileID: 1673297486}
   - component: {fileID: 1673297485}
   - component: {fileID: 1673297484}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Touche1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16094,6 +16388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tapis_Lisa_002
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11e347bed80fd7140ac73fbce1216032, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16145,13 +16443,13 @@ GameObject:
   - component: {fileID: 1738368180}
   - component: {fileID: 1738368182}
   - component: {fileID: 1738368181}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1738368180
 Transform:
   m_ObjectHideFlags: 0
@@ -16454,6 +16752,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book02_Yann_001 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16560,6 +16862,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 11e347bed80fd7140ac73fbce1216032, type: 3}
       propertyPath: m_Name
       value: SM_Tapis_Lisa_002 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 11e347bed80fd7140ac73fbce1216032, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16975,6 +17281,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_WagonBuches_Lisa_001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fbd974a4f7202a54ea993159b10d6f98, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17054,7 +17364,7 @@ GameObject:
   - component: {fileID: 1815227187}
   - component: {fileID: 1815227186}
   - component: {fileID: 1815227189}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TrainDeathCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17218,6 +17528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Pillow01_Yann_001 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 414d8dabd459ad44397d0cbaae5bcbe7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17314,6 +17628,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book02_Yann_001 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17409,6 +17727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_TrainChef_Lisa
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a369dfb2edc464940a2cf4825309f115, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -17484,6 +17806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book01_Yann_001 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17537,7 +17863,7 @@ GameObject:
   - component: {fileID: 1856516528}
   - component: {fileID: 1856516527}
   - component: {fileID: 1856516526}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Touche1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17795,6 +18121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Cube_Yann_001 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38f356828b7c33c4e8e2e24d7a986477, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18042,6 +18372,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
       propertyPath: m_Name
       value: SM_Book02_Yann_001 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18302,6 +18636,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Cube_Yann_001 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38f356828b7c33c4e8e2e24d7a986477, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18476,6 +18814,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
       propertyPath: m_Name
       value: SM_Book02_Yann_001 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e63b7e6cc3411a943b1d295d5ce0172c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18667,6 +19009,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Book01_Yann_001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18761,6 +19107,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1ce967eeaa2286640a87dfc0108f8206, type: 3}
       propertyPath: m_Name
       value: SM_Book03_Yann_001 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ce967eeaa2286640a87dfc0108f8206, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19031,6 +19381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Pillow02_Yann_001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e8760a2f2f62fa49bf86f94f8e1124f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19226,6 +19580,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
       propertyPath: m_Name
       value: SM_Book01_Yann_001 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f551faea9c0d5034cbb9b8ed3a3854ae, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

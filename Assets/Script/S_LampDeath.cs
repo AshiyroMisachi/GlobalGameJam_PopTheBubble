@@ -22,6 +22,7 @@ public class S_LampDeath : MonoBehaviour
     private float playerHeat;
     private void Start()
     {
+        lampLight.SetActive(false);
         stickerPopUp = FindObjectOfType<S_StickerPopUp>();
         stickerbook = FindObjectOfType<S_StickerBook>();
         player = FindObjectOfType<S_PlayerMovement2>();
