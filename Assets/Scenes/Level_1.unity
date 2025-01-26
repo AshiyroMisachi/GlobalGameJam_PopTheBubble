@@ -2334,60 +2334,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2cbdf5aaf50dbef4ca0f82aa36d8536f, type: 3}
   m_PrefabInstance: {fileID: 1681945140}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &366256335 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4589863047238419820, guid: bb4bc0163a3bd3949a35247f59221722, type: 3}
-  m_PrefabInstance: {fileID: 1033848405}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &366256339
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366256335}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.1, y: 0.08, z: 0.1}
-  m_Center: {x: -0.028311811, y: 0.030780755, z: 0.009959263}
---- !u!114 &366256340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366256335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f355092aa5c20f41a560ae347554f1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonAction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 273326424}
-        m_TargetAssemblyTypeName: S_LampDeath, Assembly-CSharp
-        m_MethodName: ActivateLight
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  activePosition: {x: -28.325, y: -0.08, z: -40.1147}
 --- !u!4 &381071146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a6ff7019bcae04042aad5fbfaaa564d8, type: 3}
@@ -6753,6 +6699,135 @@ Transform:
   - {fileID: 604341590}
   m_Father: {fileID: 382805802}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &905021469
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.6189641
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.6189641
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.6189641
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 43.346
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 24.208
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.973
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99794054
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.06414628
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -7.356
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      propertyPath: m_Name
+      value: SM_BoutonLampe_Lisa_001
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4589863047238419820, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 905021472}
+    - targetCorrespondingSourceObject: {fileID: 4589863047238419820, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 905021471}
+  m_SourcePrefab: {fileID: 100100000, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+--- !u!1 &905021470 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4589863047238419820, guid: 12c4dbec0a8e18a4e90c58dd88ca9560, type: 3}
+  m_PrefabInstance: {fileID: 905021469}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &905021471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905021470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f355092aa5c20f41a560ae347554f1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 273326424}
+        m_TargetAssemblyTypeName: S_LampDeath, Assembly-CSharp
+        m_MethodName: ActivateLight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  activePosition: {x: 0.09446691, y: -0.05, z: -0.04403401}
+--- !u!65 &905021472
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905021470}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.34, y: 0.27, z: 0.3}
+  m_Center: {x: -0.09495031, y: 0.103260696, z: 0.033447843}
 --- !u!1001 &906839803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9018,7 +9093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7900096261937864123, guid: bb4bc0163a3bd3949a35247f59221722, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -28.325
+      value: -28.3595
       objectReference: {fileID: 0}
     - target: {fileID: -7900096261937864123, guid: bb4bc0163a3bd3949a35247f59221722, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9026,7 +9101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7900096261937864123, guid: bb4bc0163a3bd3949a35247f59221722, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -40.121
+      value: -39.921
       objectReference: {fileID: 0}
     - target: {fileID: -6207929521617904123, guid: bb4bc0163a3bd3949a35247f59221722, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9053,7 +9128,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: ab1a6770f67203948ba414e27d35fb4c, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4589863047238419820, guid: bb4bc0163a3bd3949a35247f59221722, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8633889834432929408, guid: bb4bc0163a3bd3949a35247f59221722, type: 3}
       insertIndex: -1
@@ -9068,12 +9144,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -1790981517914978558, guid: bb4bc0163a3bd3949a35247f59221722, type: 3}
       insertIndex: -1
       addedObject: {fileID: 273326424}
-    - targetCorrespondingSourceObject: {fileID: 4589863047238419820, guid: bb4bc0163a3bd3949a35247f59221722, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 366256339}
-    - targetCorrespondingSourceObject: {fileID: 4589863047238419820, guid: bb4bc0163a3bd3949a35247f59221722, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 366256340}
     - targetCorrespondingSourceObject: {fileID: 4256952612841960283, guid: bb4bc0163a3bd3949a35247f59221722, type: 3}
       insertIndex: -1
       addedObject: {fileID: 656748027}
@@ -17816,3 +17886,4 @@ SceneRoots:
   - {fileID: 640691163}
   - {fileID: 1082528013}
   - {fileID: 626730936}
+  - {fileID: 905021469}
