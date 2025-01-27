@@ -25,7 +25,7 @@ public class S_ReveilDeath : MonoBehaviour
     }
 
 
-
+    /*
     private void OnTriggerEnter(Collider other)
     {
         if (!stickerbook.CheckStickerState(relatedSticker))
@@ -35,13 +35,19 @@ public class S_ReveilDeath : MonoBehaviour
         }
         player.RespawnAfterPop();
     }
-
+    */
 
     public void ActivateClock()
     {
         triggerCollider.enabled = true;
         audioReveil.Play();
         StartCoroutine(StopClock());
+        if (!stickerbook.CheckStickerState(relatedSticker))
+        {
+            stickerbook.UnlockSticker(relatedSticker);
+            StartCoroutine(stickerPopUp.PopUpSticker(stickerbook.stickerList[relatedSticker].unlockImage));
+        }
+        player.RespawnAfterPop();
     }
 
     public IEnumerator StopClock()
